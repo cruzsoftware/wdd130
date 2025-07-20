@@ -1,0 +1,147 @@
+/* rafting.css */
+
+:root {
+  --primary-color: #024873;
+  --secondary-color: #f1f1f1;
+  --accent1-color: #333;
+  --body-font: 'Roboto', sans-serif;
+  --heading-font: 'Playfair Display', serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout width */
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* Body styling */
+body {
+  font-family: var(--body-font);
+  background-color: var(--secondary-color);
+  color: var(--accent1-color);
+}
+
+/* Headings */
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Spacing for structure */
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 50px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+/* Main */
+main {
+  padding: 20px;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 2rem;
+  border-radius: 8px;
+}
+
+/* Article stays in normal flow */
+.hero article {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Happy client image */
+.hero article img {
+  width: 125px;
+  float: right;
+  border-radius: 8px;
+}
+
+/* Section images */
+section img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer .socialmedia img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+footer a {
+  text-decoration: none;
+}
